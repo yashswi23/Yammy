@@ -1,0 +1,11 @@
+.res-lists {
+ display: flex;
+  flex-wrap: wrap;         /* Allow wrapping to next line */
+  gap: 26px;               /* Space between cards */
+  padding: 16px;
+  justify-content: flex-start; /* Align items to start */
+  background-color: #f5f5f5;
+  /* padding: 20px; */
+}
+
+
