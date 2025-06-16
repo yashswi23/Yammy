@@ -1,24 +1,12 @@
 import React from 'react'
 import Restaurant from '../components/Restaurant/Restaurant';
 import "../styles/Res.css";
+import { resLists } from '../components/Restaurant/Restaurant';
 
 const Restaurants = () => {
   return (
     <div className='res-lists'>
-      <Restaurant></Restaurant>
-      <Restaurant></Restaurant>
-      <Restaurant>
-      </Restaurant>
-      <Restaurant></Restaurant>
-      <Restaurant></Restaurant>
-      <Restaurant></Restaurant>
-      <Restaurant></Restaurant>
-       <Restaurant>
-      </Restaurant>
-      <Restaurant></Restaurant>
-      <Restaurant></Restaurant>
-      <Restaurant></Restaurant>
-      <Restaurant></Restaurant>
+     {resLists.map((rest)=>( <Restaurant key={rest._id} resData={rest}/>))}
     </div>
   )
 }
