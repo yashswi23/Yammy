@@ -34,3 +34,7 @@
 .nav-items li:hover {
   color: #007bff;
 }
+
+.btn{
+  cursor: pointer;
+}
