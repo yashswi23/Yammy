@@ -1,6 +1,7 @@
 import React from 'react';
 import "../styles/Header.css";
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   let btnn="login";
@@ -15,12 +16,12 @@ const Header = () => {
         </div>
         <div className="nav-items">
             <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Contact Us</li>
+                <li><Link to="/">Home</Link></li>
+                <li><Link to="/about">About</Link></li>
+                <li><Link to="/contact">Contact Us</Link></li>
                 <button className='btn' onClick={()=>{
                   setlogin("Logout"); console.log("Dyamic Button Now!");
-                }}>{loginbtn}</button>
+                }}><Link to="/login">{loginbtn}</Link></button>
             </ul>
         </div>
     </div>
